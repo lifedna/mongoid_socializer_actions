@@ -1,4 +1,4 @@
-# mongoid_socializer_actions
+# mongoid_socializer_actions - lifedna
 
 mongoid_socializer_actions gives ability to like, comment, share  mongoid documents
 
