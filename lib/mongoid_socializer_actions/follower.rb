@@ -14,7 +14,7 @@ module Mongoid
     def follow(model)
       unless self.followed?(model)
         model.before_followed_by(self) if model.respond_to?('before_followed_by')
-        model.follows.create!(follower: self)
+        model.followables.create!(follower: self)
         model.followers << self
         model.inc(:followers_count, 1)
         model.after_followed_by(self) if model.respond_to?('after_followed_by')
